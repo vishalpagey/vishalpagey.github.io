@@ -1,0 +1,554 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Acme',sans-serif;
+  font-weight: 300;
+  color: #000000;
+  background-color: #829CBC;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Acme',OCR A Std, monospace, sans-serif;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+a.github-link {
+  font-weight: 400;
+  color: #1D3461;
+  text-decoration: none;
+}
+
+a.github-link:hover {
+   text-decoration: underline;
+}
+a.linkedin{
+  font-weight: 400;
+  color: #1D3461;
+  text-decoration: none;
+}
+a.linkedin:hover {
+   text-decoration: underline;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border-bottom: 5px solid #2d3c49;
+  margin-bottom: 20px;
+}
+
+.logo_img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name_and_designation {
+  text-transform: uppercase;
+}
+
+.name {
+  margin: 0;
+  line-height: 1.3;
+}
+
+.designation {
+  line-height: 1.1;
+}
+
+.code {
+  margin-bottom: 30px;
+
+}
+.code-image{
+  height: 450px;
+  width:1100px;
+}
+
+.projects-container {
+  margin-bottom: 20px;
+}
+
+.projects_list {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.project_title {
+  padding-bottom: 10px;
+}
+
+.project_card {
+  border: 1px solid #000000;
+  box-shadow: 2px 2px 4px 0 rgba(0,0,0,1);
+  max-width: 380px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.project_name {
+  font-size: 22px;
+  padding: 10px 0;
+}
+
+.project_img {
+  max-width: 100%;
+  margin: 0;
+  padding-top:0.5em;
+}
+
+.project_description {
+  font-size: 17px;
+  padding: 0 10px;
+  line-height: 1.4;
+}
+
+.project-link {
+  font-size: 17px;
+  padding: 5px 0;
+}
+
+.footer {
+  border-top: 1px solid #bbb;
+  padding: 6px 0 20px;
+  text-align: center;
+}
+
+.credits {
+  font-size: 14px;
+  padding-top: 6px;
+}
+
+.credits a {
+  color: #000000;
+}
+
+
+/**************************************************
+ * Viewport - 1 Column
+ **************************************************/
+
+@media screen and (max-width: 599px) {
+  .header {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .logo {
+    padding-bottom: 10px;
+  }
+
+  .name {
+    font-size: 38px;
+  }
+
+  .designation {
+    font-size: 18px;
+  }
+
+  . {
+    margin-bottom: 20px;
+  }
+
+  .projects-container {
+    padding: 0 16px;
+  }
+
+  .project {
+    padding-bottom: 10px;
+  }
+
+  .project_title {
+    font-size: 22px;
+  }
+
+  .project_card {
+    min-height: 380px;
+  }
+
+  .project-link {
+    font-size: 17px;
+  }
+  .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 70px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+  }
+.fa:hover {
+      opacity: 0.7;
+  }
+  /* Facebook */
+  .fa-facebook {
+
+      background: #3B5998;
+      color: white;
+  }
+
+  /* Twitter */
+  .fa-twitter {
+
+      background: #55ACEE;
+      color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+}
+
+@media screen and (min-width: 470px) and (max-width: 600px) {
+  .project {
+    padding-bottom: 16px;
+  }
+
+  .project_title {
+    font-size: 26px;
+  }
+  .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 70px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+  }
+.fa:hover {
+      opacity: 0.7;
+  }
+  /* Facebook */
+  .fa-facebook {
+
+      background: #3B5998;
+      color: white;
+  }
+
+  /* Twitter */
+  .fa-twitter {
+
+      background: #55ACEE;
+      color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+}
+
+/**************************************************
+ * Viewport 600px - 2 Columns
+ **************************************************/
+
+@media screen and (min-width: 601px){
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .name_and_designation {
+    text-align: right;
+  }
+
+  .name {
+    font-size: 40px;
+  }
+
+  .designation {
+    font-size: 18px;
+  }
+
+  .projects-container {
+    padding: 0 20px;
+  }
+
+  .projects_list {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .project_title {
+    font-size: 28px;
+  }
+
+  .project {
+    width: calc(50%);
+  }
+  .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 70px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+  }
+
+  .fa:hover {
+      opacity: 0.7;
+  }
+  /* Facebook */
+  .fa-facebook {
+
+      background: #3B5998;
+      color: white;
+  }
+
+  /* Twitter */
+  .fa-twitter {
+
+      background: #55ACEE;
+      color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 735px) {
+  .project {
+    padding-bottom: 10px;
+  }
+
+  .project:nth-child(1,2) {
+    padding-right: 5px;
+  }
+
+  .project:nth-child(3) {
+    width:100%;
+    padding-left: 5px;
+  }
+
+  .project_card {
+    min-height: 360px;
+  }
+  .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 70px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+  }
+
+  .fa:hover {
+      opacity: 0.7;
+  }
+  /* Facebook */
+  .fa-facebook {
+
+      background: #3B5998;
+      color: white;
+  }
+
+  /* Twitter */
+  .fa-twitter {
+
+      background: #55ACEE;
+      color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+}
+
+@media screen and (min-width: 736px) and (max-width: 865px) {
+  .project {
+    padding-bottom: 16px;
+  }
+
+  .project:nth-child(1,2) {
+    padding-right: 8px;
+  }
+
+  .project:nth-child(3) {
+    width:100%;
+    padding-left: 8px;
+  }
+
+  .project_card {
+    height: 400px;
+
+  }
+
+  .project_description,
+  .project-link {
+    font-size: 18px;
+  }
+  .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 70px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+  }
+
+  .fa:hover {
+      opacity: 0.7;
+  }
+  /* Facebook */
+  .fa-facebook {
+
+      background: #3B5998;
+      color: white;
+  }
+
+  /* Twitter */
+  .fa-twitter {
+
+      background: #55ACEE;
+      color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+}
+
+/**************************************************
+ * Viewport 870px - 3 Columns
+ **************************************************/
+
+@media screen and (min-width: 866px) {
+  .name {
+    font-size: 44px;
+  }
+
+  .project {
+    width: calc(33.3333% - 10px);
+  }
+
+  .project_title {
+    font-size: 32px;
+  }
+  .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 70px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+  }
+
+  .fa:hover {
+      opacity: 0.7;
+  }
+  /* Facebook */
+  .fa-facebook {
+
+      background: #3B5998;
+      color: white;
+  }
+
+  /* Twitter */
+  .fa-twitter {
+
+      background: #55ACEE;
+      color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+}
+
+/**************************************************
+ * Viewport 1100px - 3 Columns and Fixed width
+ **************************************************/
+
+@media screen and (min-width: 1100px) {
+  .main_container {
+    width: 1100px;
+    margin: 0 auto;
+  }
+
+  .header {
+    padding: 20px;
+  }
+
+  .name {
+    font-size: 50px;
+  }
+
+  .designation {
+    font-size: 20px;
+  }
+
+  .projects-container {
+    width: 1100px;
+    padding: 0;
+  }
+
+  .project {
+    width: calc(33.3333% - 16px);
+    padding-bottom: 16px;
+  }
+
+  .project_title {
+    font-size: 36px;
+  }
+
+  .project_card {
+    height: 400px;
+  }
+
+  .project_name {
+    font-size: 24px;
+  }
+
+  .project_description,
+  .project-link {
+    font-size: 18px;
+  }
+  .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 70px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+  }
+
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  /* Facebook */
+  .fa-facebook {
+
+      background: #3B5998;
+      color: white;
+  }
+
+  /* Twitter */
+  .fa-twitter {
+
+      background: #55ACEE;
+      color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+}
